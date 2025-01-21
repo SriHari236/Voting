@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Account</title>
+    <link rel="stylesheet" href="reg.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Voting System</h1>
+        </header>
+        <div class="register-box">
+            <h2>Register Account</h2>
+            <form action="register.php" method="POST" enctype="multipart/form-data">
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="number" name="mobile" placeholder="Enter your mobile number" required>
+                <input type="password" name="password" placeholder="Enter your password" required>
+                <input type="password" name="confirm_password" placeholder="Confirm password" required>
+                <input type="file" name="file" required>
+                <select name="group" required>
+                    <option value="voter">voter</option>
+                    <option value="group">Group</option>
+                    
+                    </select>
+                <button type="submit">Register</button>
+            </form>
+            <p>Already have an account? <a href="index.html">Login here</a></p>
+        </div>
+    </div>
+</body>
+</html>
